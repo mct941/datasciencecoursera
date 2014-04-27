@@ -82,4 +82,4 @@ dta.mean.std <- dta.all[,c(get.mean,get.std,ncol(dta.all),ncol(dta.all)-1)]
 ##  Summarize dataset by activity and subject id
 * dta.summary <- (aggregate(dta.labeled,list(ID=dta.labeled$ID,ACTIVITY=dta.labeled$ACTIVITY),mean))
 * dta.summary <- dta.summary[,1:(ncol(dta.summary)-2)]
-* write.csv(dta.summary,paste(getwd(),"tidy.csv",sep=""))
+* write.csv(dta.summary,paste(getwd(),"/tidy.csv",sep=""))
